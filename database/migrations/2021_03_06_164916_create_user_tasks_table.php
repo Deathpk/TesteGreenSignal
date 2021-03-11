@@ -14,8 +14,7 @@ class CreateUserTasksTable extends Migration
     public function up()
     {
         Schema::create('user_tasks', function (Blueprint $table) {
-            $table->primary('id')->increments(); // testar
-            // $table->increments('id'); // correta
+            $table->id();
             $table->string('task_creator',11);
             $table->string('task_owner', 11);
             $table->string('title');
