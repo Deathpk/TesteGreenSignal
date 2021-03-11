@@ -1,5 +1,4 @@
 @extends('layouts.app')
-{{-- @extends('deleteTaskModal') --}}
 @section('content')
   <section class="container-fluid dashboard-session">
         

@@ -35,9 +35,7 @@ class taskModel extends Model
 
     public static function deleteTask($id)
     {
-        // dd($id);
         taskModel::where('id',$id)->delete();
-        // taskModel::save();
     }
 
     public static function getUserTasks()

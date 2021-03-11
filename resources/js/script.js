@@ -12,10 +12,3 @@ $(document).ready(function () {
       });
     }, 2000);
 });
-
-//pass data to modal
-
-// $(".btn-success").on("click", function() {
-//     var object = "teste" + $(this).data('id').val();
-//     $(".modal-body").html(object);
-// });

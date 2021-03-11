@@ -15,7 +15,7 @@ class taskController extends Controller
     public function showNewTaskForm()
     {
         $allStatus = taskStatusModel::getAllTaskStatus();
-        $currentUser = userModel::where('cpf', Auth::user()->cpf)->get(['name','email']); // refatorar usando db query
+        $currentUser = userModel::where('cpf', Auth::user()->cpf)->get(['name','email']);
         $otherUsers = userModel::getAllUsers();
         return view('newTaskForm', [
             'currentUser'=>$currentUser ,
@@ -47,16 +47,13 @@ class taskController extends Controller
     public function showEditTaskForm($id)
     {
         $taskData = taskModel::getTaskById($id);
-        // dd($taskData);
+
         $currentTaskStatus = taskStatusModel::where('status',$taskData->status)->get();
-        // dd($currentTaskStatus);
         $otherStatus = taskStatusModel::where('status','!=',$taskData->status)->get();
 
         $currentTaskOwner = userModel::where('cpf', $taskData->task_owner)->get(['name','email']);
         $otherUsers = userModel::where('cpf','!=',$taskData->task_owner)->get(['name','email']);
-        // dd($allStatus);
-
-        // dd($taskData);
+        
         return view('updateTaskForm',[
             'taskData' => $taskData,
             'currentTaskStatus' => $currentTaskStatus,
@@ -67,7 +64,7 @@ class taskController extends Controller
     }
 
     public function updateTask($id , Request $request){
-        // dd($request);
+        
         try{
             $taskOwner = userModel::where('email',$request->taskOwner)->first('cpf');
 
