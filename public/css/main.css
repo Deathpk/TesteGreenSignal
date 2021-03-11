@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700&family=Josefin+Slab:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400;1,500&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css');
+*{
+    margin:0;
+    padding:0;
+    list-style: none;/* Retira os dots do li*/
+    text-decoration: none;/*Retira o sublinhado do li , nos items */
+}
+
+:root{
+    --font-primary:"Baloo Da 2",serif;
+    --font-secondary:"Josefin Slab",serif;
+    --font-action:"Muli",serif;
+}
+
+html{
+    scroll-behavior: smooth;
+    height: 100%;
+}
+body{
+    height: 100%;
+}
+
+
+.navbar{
+    height:5rem;
+}
+.initials{
+    color:rgb(70, 70, 70);
+    font-weight: 600;
+}
+
+.dashboard-session{
+    width:100%;
+    height:100%;
+    background-color: #f8fafc;
+    overflow: hidden;
+}
+
+.table-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top:30px;
+    margin-bottom: .1rem;
+    font-family: var(--font-primary);
+}
+
+.form-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top:30px;
+    margin-bottom: .1rem;
+    font-family: var(--font-primary);
+}
+.card-header{
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.updateUserForm{
+    width:100%;
+    height:100%;
+    background-color: #f8fafc;
+    overflow: hidden;
+}
+
+.form-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top:30px;
+    margin-bottom: .1rem;
+}
+
+#task-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    padding-top:30px;
+    margin-bottom: .5rem;
+}
+
+#expected-date{
+    display: flex;
+    justify-content: flex-start;
+    font-size: 1rem;
+    padding-top:30px;
+    margin-bottom: .2rem;
+}
+
+#task-status{
+    display: flex;
+    justify-content: flex-start;
+    font-size: 1rem;
+    padding-top:10px;
+    margin-bottom: .2rem;
+}
+
+#task-owner{
+    display: flex;
+    justify-content: flex-start;
+    font-size: 1rem;
+    padding-top:10px;
+    margin-bottom: 1rem;
+}
+#task-description{
+    display: flex;
+    justify-content: flex-start;
+    font-size: 1rem;
+    padding-top:30px;
+    margin-bottom: .2rem;
+}
+
+footer{
+    width: 100%;
+    height: 5rem;
+    position: absolute;
+    background-color:#f5f5f5;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+}
+
+.footer-content{
+    margin-top: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-content p{
+    font-family: var(--font-secondary);
+    color:black;
+    font-size:1.2rem;
+    font-weight: bolder;
+}
+
+
+
