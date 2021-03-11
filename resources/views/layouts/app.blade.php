@@ -105,12 +105,5 @@
             
         </main>
     </div>
-    <section>
-        <footer>
-            <div class="footer-content">
-                <p>2021, Green Signal.</p>
-            </div>
-        </footer>
-    </section>
 </body>
 </html>
